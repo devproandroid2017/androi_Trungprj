@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:id="@+id/activity_setting"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/Backgroud"
     android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.trung_pc.demoandroid.SettingActivity">
 
-    tools:context="com.example.trung_pc.demoandroid.MainActivity">
-
-
-    <Button
-
-        android:text="chon"
-        android:id="@+id/btnChon"
+    <TextView
+        android:id="@+id/txtSetting"
+        android:text="@string/Setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Switch
+        android:id="@+id/Switchlanguage"
+        android:layout_below="@id/txtSetting"
+        android:text="@string/Language"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <Button
-        android:layout_below="@+id/btnChon"
-        android:text="ChuyênListView"
-        android:id="@+id/btnChuyenList"
+        android:id="@+id/btnApply"
+        android:layout_marginTop="10dp"
+        android:text="@string/ApplySetting"
+        android:layout_below="@id/Switchlanguage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </RelativeLayout>

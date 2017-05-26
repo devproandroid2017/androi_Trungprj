@@ -2,5 +2,10 @@
     <string name="app_name">DemoAndroid</string>
     <string name="idlogin">User :</string>
     <string name="passlogin">Passwork :</string>
-    <string name="ButtonLogin">LogIn :</string>
+    <string name="ButtonLogin">LogIn</string>
+    <string name="Language">Language :</string>
+    <string name="Setting">Setting :</string>
+    <string name="btnSetting">Setting</string>
+    <string name="ApplySetting">ApplyLanguage :</string>
+
 </resources>

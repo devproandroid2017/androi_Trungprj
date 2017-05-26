@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    android:background="@color/Backgroud"
     android:id="@+id/activity_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -19,6 +20,7 @@
         android:id="@+id/imgAvatar"
         android:layout_width="200dp"
         android:layout_height="100dp" />
+
     <LinearLayout
         android:layout_marginLeft="20dp"
         android:orientation="horizontal"
@@ -32,11 +34,13 @@
             android:layout_width="130dp"
             android:layout_height="wrap_content" />
         <EditText
+            android:background="@color/backgoudedt"
             android:id="@+id/edtUser"
             android:layout_marginLeft="16dp"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_marginLeft="20dp"
         android:orientation="horizontal"
@@ -51,16 +55,31 @@
 
             android:layout_height="wrap_content" />
         <EditText
+            android:background="@color/backgoudedt"
             android:inputType="textPassword"
             android:id="@+id/edtPasswork"
             android:layout_marginLeft="16dp"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>
     <Button
+        android:id="@+id/btnLogin"
         android:padding="16dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/button3"
         android:layout_marginTop="25dp"
         android:text="@string/ButtonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:id="@+id/btnSetting"
+        android:background="@color/button3"
+        android:padding="16dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/btnSetting"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>

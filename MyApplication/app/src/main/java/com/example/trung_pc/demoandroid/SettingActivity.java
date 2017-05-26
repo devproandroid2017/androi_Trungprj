@@ -1,5 +1,6 @@
 package com.example.trung_pc.demoandroid;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -33,13 +34,17 @@ public class SettingActivity extends AppCompatActivity {
                 Configuration mConfiguration= getBaseContext().getResources().getConfiguration();
                 if(mASwitch.isChecked()){
                      //locale=Locale.ENGLISH;
-                    locale=new Locale("en_US");
+                    locale=new Locale("en");
                 }
                 else {
-                    locale=new Locale("vi_VN");
+                    locale=new Locale("vi");
                 }
+
                 mConfiguration.setLocale(locale);
-                getApplicationContext().createConfigurationContext(mConfiguration);
+                //getApplicationContext().createConfigurationContext(mConfiguration);
+                getBaseContext().getResources().updateConfiguration(mConfiguration,getBaseContext().getResources().getDisplayMetrics());
+                Intent mIntent=new Intent(SettingActivity.this,MainActivity.class);
+                startActivity(mIntent);
             }
         });
     }
